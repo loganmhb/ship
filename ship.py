@@ -2,6 +2,8 @@
 
 import os
 
+import parser
+
 
 def prompt():
     print " % ",
@@ -10,7 +12,7 @@ def prompt():
 def main():
     while True:
         prompt()
-        cmd = raw_input().split(' ')
+        cmd = parser.parse_args(raw_input())
         if cmd[0] == 'exit':
             break
         else:
