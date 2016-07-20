@@ -14,7 +14,7 @@ def main():
         if cmd[0] == 'exit':
             break
         else:
-            print "Running program " + cmd[0] + "with args " + str(cmd[1:])
+            os.spawnvp(os.P_WAIT, cmd[0], cmd)
 
 if __name__ == "__main__":
     main()
