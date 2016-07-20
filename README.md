@@ -2,7 +2,7 @@
 
 Toy shell written in Python.
 
-All it does is run the command you give it, splitting on spaces.
+Currently will exec commands you give it, splitting arguments on spaces and respecting single-quoted strings (no escapes, though). Contains builtin for 'cd'.
 
 Example:
 
